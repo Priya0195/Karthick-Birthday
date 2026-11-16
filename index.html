@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090713">
+<title>A Birthday Surprise for Karthick ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+:root{--gold:#f4d18a;--gold2:#fff0c9;--ink:#090713;--muted:#c9bfd5;--pink:#f5a8c8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#302044 0,#120d20 42%,#080711 100%);color:#fff;font-family:Manrope,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:47px 47px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.12}to{opacity:.34}}
+button{font:inherit;cursor:pointer}
+button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.topbar{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:17px clamp(18px,5vw,65px);background:linear-gradient(#090713dd,transparent);backdrop-filter:blur(5px)}
+.brand{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.top-actions{display:flex;gap:9px}
+.ghost{border:1px solid #ffffff38;color:#fff;background:#ffffff0c;border-radius:30px;padding:9px 14px;font-size:12px}
+main{position:relative;z-index:1}
+section{min-height:100svh;padding:110px 22px 70px;display:flex;align-items:center;justify-content:center;position:relative}
+.wrap{width:min(100%,1000px);margin:auto;text-align:center}
+.eyebrow{color:var(--gold);letter-spacing:.32em;text-transform:uppercase;font-size:10px;font-weight:700}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;margin:14px 0}
+h1{font-size:clamp(54px,10vw,112px);line-height:.91;letter-spacing:-.045em}
+h2{font-size:clamp(40px,7vw,72px);line-height:1}
+h3{font-size:32px}
+.gold{background:linear-gradient(110deg,#fff3d3,#d8a84f 45%,#fff0bd 72%,#bd8438);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:620px;margin:22px auto;color:#d6cddd;line-height:1.85;font-size:14px}
+.primary{border:0;border-radius:999px;padding:15px 25px;background:linear-gradient(120deg,#fff0c8,#d6a44e 52%,#f9dda1);color:#24172a;font-weight:800;box-shadow:0 9px 32px #d8a64d42;transition:.25s}
+.primary:hover{transform:translateY(-3px);box-shadow:0 14px 38px #d8a64d66}
+.secondary{border:1px solid #e9cb8b88;background:#ffffff0c;color:#fff;border-radius:999px;padding:13px 20px}
+.hero-orb{width:min(72vw,410px);aspect-ratio:1;margin:35px auto 28px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 34% 25%,#fff5d8 0,#e7bd72 4%,#754a70 20%,#25162f 52%,#0c0914 72%);box-shadow:inset -22px -24px 55px #0009,inset 12px 12px 35px #fff4,0 0 75px #d8a64d35;transform:perspective(800px) rotateX(12deg);animation:float 6s ease-in-out infinite}
+.hero-orb:before,.hero-orb:after{content:"";position:absolute;border:1px solid #f6d99a66;border-radius:50%;inset:-14px;transform:rotateX(68deg) rotateZ(-20deg)}
+.hero-orb:after{inset:-28px;transform:rotateX(72deg) rotateZ(35deg);border-color:#ffffff35}
+.orb-text{font-family:"Cormorant Garamond",serif;font-size:clamp(32px,6vw,58px);text-shadow:0 3px 18px #000;line-height:1.05}
+@keyframes float{50%{transform:perspective(800px) rotateX(12deg) translateY(-13px)}}
+.scrollhint{font-size:10px;letter-spacing:.2em;color:#b9aabd;margin-top:25px}
+.glass{background:linear-gradient(135deg,#ffffff17,#ffffff05);border:1px solid #ffffff24;border-radius:26px;box-shadow:0 24px 80px #0005,inset 0 1px #ffffff26;backdrop-filter:blur(14px)}
+.gift-stage{width:min(90vw,430px);height:330px;margin:35px auto 20px;display:grid;place-items:center;perspective:900px}
+.gift{position:relative;width:190px;height:150px;transform-style:preserve-3d;filter:drop-shadow(0 25px 25px #0008);transition:transform 1s}
+.gift-box{position:absolute;bottom:0;width:190px;height:125px;background:linear-gradient(110deg,#6e1d4c,#b63c73 48%,#6c1c50);border:1px solid #f4c97988;transform:rotateX(-8deg);border-radius:5px 5px 14px 14px}
+.gift-box:before{content:"";position:absolute;left:78px;top:0;width:34px;height:100%;background:linear-gradient(90deg,#f6d88b,#fff0c1,#d49b45)}
+.gift-lid{position:absolute;z-index:2;top:15px;left:-10px;width:210px;height:42px;border-radius:7px;background:linear-gradient(110deg,#8b285a,#d44c86,#8c285b);border:1px solid #f5d48a;transform-origin:10% 100%;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.gift-lid:before{content:"";position:absolute;left:88px;top:0;width:34px;height:100%;background:linear-gradient(90deg,#f6d88b,#fff0c1,#d49b45)}
+.bow{position:absolute;z-index:3;top:-12px;left:74px;width:44px;height:30px}
+.bow:before,.bow:after{content:"";position:absolute;width:27px;height:22px;border:7px solid #f6d88b;border-radius:50% 50% 50% 8px;transform:rotate(25deg)}
+.bow:after{left:18px;transform:scaleX(-1) rotate(25deg)}
+.gift.open .gift-lid{transform:translate(-28px,-105px) rotate(-28deg)}
+.gift.open{transform:translateY(10px) rotateX(-8deg)}
+.gift.open:after{content:"✨";position:absolute;top:-125px;left:55px;font-size:80px;animation:spark .8s ease-out infinite alternate}
+@keyframes spark{to{transform:scale(1.3) rotate(12deg);filter:drop-shadow(0 0 20px gold)}}
+.balloon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:680px;margin:35px auto}
+.balloon{border:0;background:transparent;min-height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:#d9cbdc}
+.balloon-shape{width:66px;height:82px;border-radius:50% 50% 46% 46%;position:relative;box-shadow:inset -10px -9px 15px #0005,inset 8px 8px 15px #ffffff5c,0 12px 25px #0005;animation:bob 2.7s ease-in-out infinite}
+.balloon-shape:before{content:"";position:absolute;width:2px;height:52px;background:#ffffff75;top:79px;left:50%}
+.balloon-shape:after{content:"";position:absolute;bottom:-5px;left:29px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:8px solid currentColor}
+.balloon:nth-child(4n+1) .balloon-shape{background:linear-gradient(135deg,#ffd9a0,#b77b35);color:#b77b35}
+.balloon:nth-child(4n+2) .balloon-shape{background:linear-gradient(135deg,#ffc6dd,#b8497a);color:#b8497a;animation-delay:.3s}
+.balloon:nth-child(4n+3) .balloon-shape{background:linear-gradient(135deg,#c9c1ff,#6656a7);color:#6656a7;animation-delay:.6s}
+.balloon:nth-child(4n) .balloon-shape{background:linear-gradient(135deg,#b9e9dc,#388c83);color:#388c83;animation-delay:.9s}
+@keyframes bob{50%{transform:translateY(-10px) rotate(3deg)}}
+.balloon.popped .balloon-shape{animation:pop .35s forwards}
+.balloon.popped .balloon-label{color:var(--gold)}
+@keyframes pop{to{transform:scale(1.8);opacity:0}}
+.balloon-label{font-size:11px;letter-spacing:.08em}
+.message-card{max-width:610px;margin:25px auto;padding:30px}
+.message-card p{line-height:1.9;color:#e2d9e7;font-size:14px}
+.message-card .reveal{font-family:"Cormorant Garamond",serif;font-size:35px;color:var(--gold2);margin:0}
+.progress{font-size:12px;color:#cfc1d7;margin-top:12px}
+.quiz{max-width:560px;margin:30px auto;padding:30px}
+.answers{display:grid;gap:10px;margin-top:20px}
+.answer{padding:13px 16px;border:1px solid #ffffff30;background:#ffffff0a;color:white;border-radius:14px;text-align:left}
+.answer:hover{background:#ffffff1b;border-color:#e7c47e}
+.feedback{min-height:28px;color:var(--gold);font-size:13px;margin-top:14px}
+.cake{font-size:100px;filter:drop-shadow(0 12px 25px #f6b9c855);animation:cakefloat 3s ease-in-out infinite}
+@keyframes cakefloat{50%{transform:translateY(-10px) rotate(2deg)}}
+footer{padding:28px 20px;text-align:center;color:#8e8197;font-size:10px;letter-spacing:.13em}
+.confetti{position:fixed;top:-20px;width:8px;height:13px;z-index:50;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(760deg);opacity:.1}}
+.modal{position:fixed;inset:0;background:#080611d9;display:none;place-items:center;z-index:60;padding:20px}
+.modal.show{display:grid}
+.modal-inner{max-width:520px;width:100%;padding:35px;text-align:center}
+.small{font-size:11px;color:#a99caf;line-height:1.7}
+@media(max-width:560px){.topbar{padding:13px 15px}.brand{font-size:9px}.ghost{padding:8px 10px}.balloon-grid{grid-template-columns:repeat(2,1fr);gap:10px}.balloon{min-height:118px}.gift-stage{height:280px}section{padding-top:100px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">A little magic for Karthick</div>
+  <div class="top-actions">
+    <button class="ghost" id="musicBtn" aria-label="Toggle birthday music">♫ Music: Off</button>
+    <button class="ghost" onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})">Final surprise ✨</button>
+  </div>
+</header>
+<main>
+<section id="welcome">
+ <div class="wrap">
+  <div class="eyebrow">A celebration made just for you</div>
+  <h1><span class="gold">Something</span><br>magical awaits.</h1>
+  <p class="lead">Tonight, the stars are a little brighter and the world has one more reason to celebrate. Karthick, this little experience is all yours.</p>
+  <div class="hero-orb"><div class="orb-text">A day<br><span class="gold">to remember</span></div></div>
+  <button class="primary" onclick="startExperience()">Unlock your surprise&nbsp; ✨</button>
+  <div class="scrollhint">A LITTLE JOURNEY OF JOY · SCROLL TO EXPLORE</div>
+ </div>
+</section>
+<section id="gift">
+ <div class="wrap">
+  <div class="eyebrow">Chapter 01 · A gift from the heart</div>
+  <h2>Every great day<br><span class="gold">begins with a surprise.</span></h2>
+  <p class="lead">A little mystery, wrapped with a lot of love. Tap the gift and let the celebration begin.</p>
+  <div class="gift-stage"><div class="gift" id="giftBox"><div class="gift-lid"></div><div class="bow"></div><div class="gift-box"></div></div></div>
+  <button class="primary" id="giftBtn" onclick="openGift()">Open your gift 🎁</button>
+  <p class="small" id="giftNote">There is something wonderful waiting inside.</p>
+ </div>
+</section>
+<section id="balloons">
+ <div class="wrap">
+  <div class="eyebrow">Chapter 02 · Pop the magic</div>
+  <h2>Four little pops.<br><span class="gold">Four lovely surprises.</span></h2>
+  <p class="lead">Tap each balloon to reveal a message. Every pop brings another reason to smile.</p>
+  <div class="balloon-grid" id="balloonGrid">
+   <button class="balloon" onclick="popBalloon(0,this)"><span class="balloon-shape"></span><span class="balloon-label">Surprise 01</span></button>
+   <button class="balloon" onclick="popBalloon(1,this)"><span class="balloon-shape"></span><span class="balloon-label">Surprise 02</span></button>
+   <button class="balloon" onclick="popBalloon(2,this)"><span class="balloon-shape"></span><span class="balloon-label">Surprise 03</span></button>
+   <button class="balloon" onclick="popBalloon(3,this)"><span class="balloon-shape"></span><span class="balloon-label">Surprise 04</span></button>
+  </div>
+  <div class="message-card glass" id="balloonMessage"><p class="reveal">Your surprises are waiting…</p><p>Choose a balloon above.</p></div>
+  <div class="progress" id="balloonProgress">0 of 4 surprises revealed</div>
+ </div>
+</section>
+<section id="game">
+ <div class="wrap">
+  <div class="eyebrow">Chapter 03 · A tiny birthday game</div>
+  <h2>How well do you know<br><span class="gold">your own awesomeness?</span></h2>
+  <div class="quiz glass">
+   <h3 id="question">Ready for a little fun?</h3>
+   <p class="small" id="quizIntro">Answer these just-for-fun birthday questions. There are no wrong answers when the goal is to smile.</p>
+   <div class="answers" id="answers"><button class="primary" onclick="nextQuestion()">Start the mini game ✨</button></div>
+   <div class="feedback" id="feedback"></div>
+  </div>
+ </div>
+</section>
+<section id="wishes">
+ <div class="wrap">
+  <div class="eyebrow">Chapter 04 · Words to keep</div>
+  <h2>A few wishes<br><span class="gold">for your next chapter.</span></h2>
+  <div class="message-card glass">
+   <p class="reveal">Dear Karthick,</p>
+   <p>May your days be filled with laughter that comes easily, dreams that grow bigger, and people who make life beautiful. May every challenge make you stronger, every opportunity take you further, and every little moment remind you how special you are.</p>
+   <p>Wishing you good health, genuine happiness, exciting adventures, and success in everything you set your heart on. Keep shining, keep smiling, and never stop being wonderfully you.</p>
+   <p class="reveal">You deserve all the good things. ❤️</p>
+  </div>
+ </div>
+</section>
+<section id="final">
+ <div class="wrap">
+  <div class="eyebrow">The final chapter · Make a wish</div>
+  <div class="cake">🎂</div>
+  <h1><span class="gold">Happy Birthday</span><br>Karthick!</h1>
+  <p class="lead">May this year bring you beautiful beginnings, unforgettable memories, and a thousand reasons to celebrate. Here's to your brightest chapter yet!</p>
+  <button class="primary" onclick="celebrate()">Make the sky sparkle ✨</button>
+  <p class="small" style="margin-top:25px">Made with love, just to make your day unforgettable.</p>
+ </div>
+</section>
+</main>
+<footer>MADE FOR KARTHICK · WITH LOVE & A LITTLE BIT OF MAGIC</footer>
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+ <div class="modal-inner glass">
+  <div class="eyebrow">A little note for you</div>
+  <h2 class="gold" id="modalTitle">Surprise!</h2>
+  <p id="modalText" class="lead"></p>
+  <button class="primary" onclick="closeModal()">Aww, thank you ❤️</button>
+ </div>
+</div>
+<audio id="birthdayMusic" loop preload="none" volume="0.7">
+  <source src="birthday-bgm.mp3" type="audio/mpeg">
+  Your browser does not support audio playback.
+</audio>
+<script>
+const wishes=[
+ ["A wish for joy","May laughter find you in the smallest moments and happiness stay a little longer every day."],
+ ["A wish for courage","May you be brave enough to chase the dreams that make your heart come alive."],
+ ["A wish for adventure","May new places, wonderful people, and unexpected opportunities make this year unforgettable."],
+ ["A wish for love","May you always feel appreciated, supported, and surrounded by people who bring out your best."]
+];
+let popped=new Set(),qIndex=-1,score=0,audioCtx=null,melodyTimer=null,noteIndex=0;
+function startExperience(){document.getElementById('gift').scrollIntoView({behavior:'smooth'});celebrate(35)}
+function openGift(){const g=document.getElementById('giftBox');if(g.classList.contains('open'))return;g.classList.add('open');document.getElementById('giftBtn').textContent='Gift opened ✨';document.getElementById('giftNote').textContent='Inside this gift: a whole lot of good wishes for you, Karthick!';setTimeout(()=>document.getElementById('balloons').scrollIntoView({behavior:'smooth'}),1400);celebrate(24)}
+function popBalloon(i,el){if(popped.has(i))return;popped.add(i);el.classList.add('popped');const [title,msg]=wishes[i];document.getElementById('balloonMessage').innerHTML='<p class="reveal">'+title+'</p><p>'+msg+'</p>';document.getElementById('balloonProgress').textContent=popped.size+' of 4 surprises revealed';celebrate(12);if(popped.size===4)setTimeout(()=>{document.getElementById('balloonMessage').innerHTML+='<p class="reveal">You are the real surprise! ✨</p>'},350)}
+const questions=[
+ {q:"What's the most important ingredient in a perfect birthday?",a:["Cake and more cake 🍰","Laughter & good company ❤️","A mountain of presents 🎁"],right:1,why:"The best memories are made with people and laughter."},
+ {q:"What should this new year bring you?",a:["Big dreams and brave adventures ✨","Only Mondays 😅","A lifetime supply of chores"],right:0,why:"Absolutely! May big dreams become beautiful realities."},
+ {q:"What's the birthday rule?",a:["No smiling allowed","Today is all about celebrating YOU 🥳","Work extra hard today"],right:1,why:"Correct! Today, you are the VIP."}
+];
+function nextQuestion(){qIndex++;const q=document.getElementById('question'),a=document.getElementById('answers'),f=document.getElementById('feedback');f.textContent='';if(qIndex>=questions.length){q.textContent='You completed the birthday game!';a.innerHTML='<p class="lead">Your score: '+score+' / '+questions.length+' — and you win unlimited birthday happiness! 🏆</p><button class="primary" onclick="qIndex=-1;score=0;nextQuestion()">Play again</button>';return}const item=questions[qIndex];q.textContent=item.q;a.innerHTML='';item.a.forEach((label,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=label;b.onclick=()=>{if(a.dataset.done==='1')return;a.dataset.done='1';if(i===item.right){score++;f.textContent='Lovely answer! '+item.why}else{f.textContent='Nice try! '+item.why}const next=document.createElement('button');next.className='primary';next.textContent=qIndex===questions.length-1?'See my result':'Next question →';next.style.marginTop='12px';next.onclick=()=>{a.dataset.done='0';nextQuestion()};a.appendChild(next)};a.appendChild(b)})}
+function celebrate(count=65){const colors=['#f5d58f','#f7a9cb','#b8a7f5','#ffffff','#9cdbc9'];for(let i=0;i<count;i++){const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=colors[Math.floor(Math.random()*colors.length)];el.style.animationDuration=(2.3+Math.random()*3)+'s';el.style.animationDelay=(Math.random()*.6)+'s';el.style.transform='rotate('+Math.random()*360+'deg)';document.body.appendChild(el);setTimeout(()=>el.remove(),6000)}}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function toggleMusic(){
+  const music = document.getElementById('birthdayMusic');
+  const btn = document.getElementById('musicBtn');
+
+  if (music.paused) {
+    music.play().then(() => {
+      btn.textContent = '♫ Music: On';
+    }).catch(() => {
+      btn.textContent = '♫ Tap to retry music';
+    });
+  } else {
+    music.pause();
+    btn.textContent = '♫ Music: Off';
+  }
+}
+document.getElementById('musicBtn').addEventListener('click',toggleMusic);
+</script>
+</body>
+</html>
